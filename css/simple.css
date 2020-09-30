@@ -57,5 +57,7 @@ nav.ul{
     margin-left: 1%;
   }
 header, footer {
-    background-color: # rgb(42, 65, 80);
+    background-color: rgb(42, 65, 80);
+    flex-grow: 1;
+    justify-content: center;
 }
