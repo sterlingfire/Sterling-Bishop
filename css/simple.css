@@ -1,12 +1,7 @@
-html {
-  text-color-normal: hsl(210, 10%, 62%);
-  --text-color-light: hsl(210, 15%, 35%);
-  --text-color-richer: hsl(210, 50%, 72%);
-  --text-color-highlight: hsl(25, 70%, 45%);
-}
+
 body {
     background-color: #121212;
-    color: aqua;
+    color: rgb(185, 234, 234);
 }
 main {
   flex-grow: 1;
@@ -19,7 +14,7 @@ main {
   justify-content: space-between;
   background-color: rgb(42, 65, 80);
   padding: 2%;
-  border-radius: 2%;
+  border-radius: 4%;
 }
 nav.ul{
     margin-block-start: 0em;
@@ -29,13 +24,13 @@ nav.ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: lightskyblue;
+    background-color: rgb(42, 65, 80);
     padding: 2%;
     border-radius: 2%;
   }
 
 .subcontainer{
-    background-color: linen;
+    background-color: rgb(42, 65, 80);
     text-align: center;
 }
 .stat{
@@ -47,9 +42,8 @@ nav.ul{
 .item, .stack {
   flex: 1;
   padding: 2%; /* Same as width, sets height */
-  border-radius: 2%;
+  border-radius: 4%;
   position: relative;
-  background-color: rgb(47, 31, 51);
   text-align: center;
   list-style: none;
 }
@@ -63,5 +57,5 @@ nav.ul{
     margin-left: 1%;
   }
 header, footer {
-    background-color: #58adadfa;
+    background-color: # rgb(42, 65, 80);
 }
