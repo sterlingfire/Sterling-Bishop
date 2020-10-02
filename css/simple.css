@@ -1,6 +1,14 @@
+:root {
+  --color-1: #2069e0;
+  --color-2: #f4d47c;
+  --color-3: #082c6c;
+  --color-4: #878683;
+  --color-5: #bebebe;
+  --color-6: #444444;
+}
 
 body {
-    background-color: #121212;
+    background-color: #222222;
     color: rgb(185, 234, 234);
 }
 main {
