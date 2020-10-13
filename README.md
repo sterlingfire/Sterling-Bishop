@@ -4,11 +4,11 @@ Rithm School pre-work assignment:
 
 [Description]
 
-*1. Build a Personal Site*
+**1. Build a Personal Site**
 
 To help solidify everything you’ve learned about HTML and CSS, we want you to build a personal website. Not only is this a great way to practice what you’ve learned, but it’s also going to be a great resource to have once you finish up the program and are starting to look for a job.
 
-*Requirements*
+**Requirements**
 
 At a minimum, your personal website should have the following:
 
