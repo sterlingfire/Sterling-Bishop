@@ -7,11 +7,13 @@
 <!--<![endif]-->
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
     <link rel="stylesheet" type="text/css" href="css/simple.css">
+    <link rel="stylesheet" type="text/css" href="css/glowingletters.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>J. Sterling Bishop</title>
+    <title>Sterling Bishop - Developer. Artist.</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -20,25 +22,40 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <h1>
+            <div>
+                <span class="letter">S</span>
+                <span class="letter">T</span>
+                <span class="letter">E</span>
+                <span class="letter">R</span>
+                <span class="letter">L</span>
+                <span class="letter">I</span>
+                <span class="letter">N</span>
+                <span class="letter">G</span>
+            </div>
+            <div>
+                <span class="letter">B</span>
+                <span class="letter">I</span>
+                <span class="letter">S</span>
+                <span class="letter">H</span>
+                <span class="letter">O</span>
+                <span class="letter">P</span>
+            </div>
+          </h1>
         <header class="container">
-            <img width="100%" height="100%" src="img/duneSwords.jpg"/>
 
-            <h1>J. Sterling Bishop: Developer</h1>
-            <p>B.S. Information Technology from University of New Hampshire 2013</p>
-
-
+          <!--<img width="100%" height="100%" src="img/duneSwords.jpg" alt="Sterling stand on sand dunes with flaming swords."/>-->
         </header>
 
         <nav>
             <ul class="container">
             <li class="item"><a class="flat-button" href="#"><b>Home</b></a> </li>
-            <li class="item"><a class="flat-button" href="doc/JSterlingBishopResume.pdf">Resume</a></li>
+            <li class="item"><a class="flat-button" href="doc/JSterlingBishopResume.pdf" download="JSterlingBishopResume">Download Resume</a></li>
             <li class="item"><a class="flat-button" href="mailto:jsterlingbishop+contactme@gmail.com">Contact</a> </li>
             <!--<li class="item"><a href="#">Projects</a></li>-->
         </ul></nav>
     <aside class="container">
-        <img width="30%" height="30%" src="img/profilebw.jpg"/>
+        <img width="30%" height="30%" src="img/profilebw.jpg" alt="Portrait of me, Sterling."/>
         <div class="stack">
             <p class="stack">Hello. My name is Jonathan Sterling Bishop, call me Sterling.</p>
             <p class="stack">Developer, Fire Performer, artist.</p>
@@ -48,6 +65,9 @@
     </aside>
     <main>
     <ul class="container stack">
+        <h2>Education:</h2>
+        <li class="stack"><a href="https://www.rithmschool.com/">Rithm School</a> Full stack web development.<br></li>
+        <li class="stack"><a href="https://unh.edu/">University of New Hampshire</a>B.S. Information Technology minor: Business Administration<br></li>
         <h2>Work History:</h2>
         <li class="stack"><a href="https://red5pro.com">Infrared5</a> - Automation Test Engineer: One Man department.<br></li>
         <li class="stack"><a href="https://www.thelevelup.com/">LevelUp</a> - QA & Project Management: Network Ops Team.<br></li>
@@ -63,7 +83,7 @@
         <div class="container">
         <form onsubmit="email()" class="stack">
             <input class="item stack" name="name" placeholder="Name">
-            <input class="item stack" name="email" placeholder="Email">
+            <input type="email" class="item stack" name="email" placeholder="Email">
             <input class="item stack" name="subject" placeholder="Subject: Website Contact">
             <textarea rows="4" class="stack" name="body" id="EmailBody">"Hello, I would like to contact you about a job opportunity."</textarea>
             <input id="submit" type="submit" class="flat-button" value="SEND">
@@ -71,6 +91,10 @@
         </div>
         <!--<p><a href="mailto:jsterlingbishop+contactme@gmail.com?subject=WebsiteContact?body=Hello">Email me</a></p>
         -->
+        <a href="https://www.linkedin.com/in/sterling-bishop-a6baba50/" ><img src="img/icons/linkedin_dark.png"></a>
+        <a href="https://www.instagram.com/sterling_fire/"><img src="img/icons/instagram_dark.png"></a>
+
+
         <p class="dark">©Sterling Bishop 2020 - All Rights Reserved</p>
 
     </footer>
@@ -84,6 +108,29 @@ function email(){
 
     window.open(uri);
     }
+</script>
+<script>
+    const h1 = document.querySelector('h1');
+    function randomRGB() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r},${g},${b})`
+    }
+    var h = 0;
+    var s = 75;
+    var l = 45;
+    function hsl(){
+        h += 15;
+        return `hsl(${h}, ${s}%, ${l}%)`
+    }
+    const letters = document.querySelectorAll(".letter");
+    const intervalId = setInterval(function() {
+    for (let letter of letters) {
+        letter.style.color = hsl();
+    }
+    }, 1500);
+    //let stop = clearInterval(intervalId);
 </script>
 
 </html>
