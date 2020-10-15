@@ -5,11 +5,17 @@ body {
   font-size: 16px;
   margin: 0%;
 }
+div {
+  min-width: 411px;
+  justify-content: center;
+  align-content: center;
+}
 p, li {
   color: #f1fffd;
 }
 form {
   max-width: 500px;
+  max-height: 300px;
 }
 nav a:link{
   display: inline-block;
@@ -28,7 +34,8 @@ main {
 
 .container, .subcontainer {
   display: flex;
-  flex-wrap: wrap;
+  padding: 0%; /* Same as width, sets height */
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color:#001d2d;
   padding: 1%;
@@ -39,9 +46,8 @@ main {
   margin: 0;
 }
 nav.ul{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    display: inline-block;
+    justify-content: center;
+    align-content: center;
 }
 
 .col {
@@ -78,8 +84,8 @@ nav.ul{
   width: 100%;
 }
 
-nav .item + .item {
-    margin-left: 1%;
+nav > .item > .item + .item {
+    margin-left: 2%;
   }
 header, footer {
     background-color: rgb(42, 65, 80);
