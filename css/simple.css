@@ -83,15 +83,14 @@ nav.ul{
   width: 100px;
 }
 .item, .stack {
-  flex: 1;
-  padding: 2%; /* Same as width, sets height */
+
   border-radius: 4%;
   justify-content: center;
   text-align: center;
   list-style: none;
   flex-wrap: wrap;
 }
-nav.item {
+nav .item {
   padding: 0%;
 }
 
@@ -126,6 +125,9 @@ input, textarea{
 }
 .dark {
   color: #8d8d8d;
+}
+.smol{
+  font-size: 14px;
 }
 .wideLogo{
   width: 200px;
