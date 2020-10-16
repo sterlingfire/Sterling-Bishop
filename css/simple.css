@@ -1,25 +1,30 @@
 body {
-  background-color: #000605;
+  background-color: rgb(42, 65, 80);
   color:  #01b59a;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0%;
-  overflow-wrap:  anywhere;
+  overflow-wrap: normal;
+}
+
+a {
+  color: #08a8fd;
 }
 div {
   min-width: 411px;
   justify-content: center;
   align-content: center;
 }
-p, li {
+p {
   color: #f1fffd;
+  font-size: 30px;
 }
 form {
   max-width: 500px;
   max-height: 300px;
 }
 main.container{
-  flex-direction: ;
+  flex-direction: row;
 }
 nav a:link{
   display: inline-block;
@@ -31,6 +36,13 @@ a:hover {
  background-color: #08a8fd;
 }
 
+nav a:visited{
+  color: hotpink;
+}
+
+.flat-button:visited{
+  color: #08fdd8;
+}
 main {
   flex-grow: 1;
   justify-content: center;
@@ -41,7 +53,6 @@ main {
   padding: 0%; /* Same as width, sets height */
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color:#001d2d;
   padding: 1%;
   border-radius: 2%;
   flex-basis: 550px;
@@ -73,11 +84,15 @@ nav.ul{
 }
 .item, .stack {
   flex: 1;
-  padding: 0%; /* Same as width, sets height */
+  padding: 2%; /* Same as width, sets height */
   border-radius: 4%;
   justify-content: center;
   text-align: center;
   list-style: none;
+  flex-wrap: wrap;
+}
+nav.item {
+  padding: 0%;
 }
 
 .stack {
@@ -94,6 +109,7 @@ header, footer {
     background-color: rgb(42, 65, 80);
     flex-grow: 1;
     justify-content: center;
+    padding: 0%;
 }
 hr {
   background-color: #08fdd8;
@@ -113,6 +129,7 @@ input, textarea{
 }
 .wideLogo{
   width: 200px;
+  transform: translateY(25px);
 }
 .flat-button {
   width: auto;

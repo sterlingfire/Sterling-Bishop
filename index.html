@@ -44,9 +44,9 @@
                      <span class="letter">P</span>
                   </div>
                </h1>
-               <header class="container">
+               <header class="">
                   <!--<img width="100%" height="100%" src="img/duneSwords.jpg" alt="Sterling stand on sand dunes with flaming swords."/>-->
-               </header>
+
                <nav>
                   <ul class="container">
                      <li class="item"><a class="flat-button" href="#"><b>Home</b></a> </li>
@@ -55,65 +55,47 @@
                      <!--<li class="item"><a href="#">Projects</a></li>-->
                   </ul>
                </nav>
+            </header>
                <aside class="container">
                   <img width="30%" height="30%" src="img/profilebw.jpg" alt="Portrait of me, Sterling."/>
                   <div class="stack">
                      <p class="stack">Hello. My name is Jonathan Sterling Bishop, call me Sterling.</p>
-                     <p class="stack">Developer, Fire Performer, artist.</p>
+                     <p class="stack">Bay Area Developer, Fire Performer, artist.</p>
                      <p class="stack">I've been using the quarantine to transition from QA to full stack web development.</p>
                      </p>
                   </div>
                </aside>
                <main class="">
+                <h2>Education:</h2>
                   <ul class="container">
-                     <h2>Education:</h2>
-                     <li class="stack"><a href="https://www.rithmschool.com/"><img src="img/icons/rithm_logo.png" School/> <br>Full stack web development.</a></li>
-                     <li class="stack"><a href="https://unh.edu/"><img src="img/icons/UNH-Logo-2.png"/> <br>B.S. Information Technology</a></li>
+                     <li class="stack logo"><a href="https://www.rithmschool.com/"><img class="logo" src="img/icons/rithm_logo.png" School/> <br>Full stack web development.</a></li>
+                     <li class="stack logo"><a href="https://unh.edu/"><img class="logo" src="img/icons/UNH-Logo-2.png"/> <br>B.S. Information Technology</a></li>
                     </ul>
+                    <h2 >Work History:</h2>
                     <ul class="container">
-                   <h2>Work History:</h2>
-                        <li class="stack"><a href="https://red5pro.com"><img class="logo" src="img/icons/red5pro.png"/> <br>Infrared5</a></li>
-                        <li class="stack"><a href="https://www.thelevelup.com/"><img class="logo" src="img/icons/levelupLogo.png"/> <br>LevelUp</a></li>
-                        <li class="stack"><a href="https://www.xceptance.com/en/"><img class="wideLogo" src="img/icons/xceptance-logo.png"/> <br>Xceptance Software Technologies</a></li>
-                        <li class="stack"><a href="https://www.hitachivantara.com/en-us/home.html"><img class="logo" src="img/icons/hitachi.png"/> <br>Hitachi Vantara</a></li></div>
+                        <li class="item"><a href="https://red5pro.com"><img class="logo" src="img/icons/red5pro.png"/> <br>Infrared5</a></li>
+                        <li class="item"><a href="https://www.thelevelup.com/"><img class="logo" src="img/icons/levelupLogo.png"/> <br>LevelUp</a></li>
+                        <li class="item"><a href="https://www.xceptance.com/en/"><img class="wideLogo" src="img/icons/xceptance-logo.png"/><br><br>Xceptance Software Technologies</a></li>
+                        <li class="item"><a href="https://www.hitachivantara.com/en-us/home.html"><img class="logo" src="img/icons/hitachi.png"/> <br>Hitachi Vantara</a></li></div>
                   </ul>
                   </div>
                </main>
                <footer class="container">
+                   <p>Currently looking for Bay Area developer?
+                   </p>
                   <h3>
-                     <b>Contact Me:</b>
+                     <p><b>Contact Me:</b>
                      <hr>
                   </h3>
-                  <div class="container>
-                  <form onsubmit="email()" class="stack">
-                     <input class="item stack" name="name" placeholder="Name">
-                     <input type="email" class="item stack" name="email" placeholder="Email">
-                     <input class="item stack" name="subject" placeholder="Subject: Website Contact">
-                     <textarea rows="4" class="stack" name="body" id="EmailBody">"Hello, I would like to contact you about a job opportunity."</textarea>
-                     <input id="submit" type="submit" class="flat-button" value="SEND">
-                  </form>
-                  </div>
-                  <!--<p><a href="mailto:jsterlingbishop+contactme@gmail.com?subject=WebsiteContact?body=Hello">Email me</a></p>
-                     -->
-                  <div ">
-                     <br>
+                  <div>
+                     <a href="mailto:jsterlingbishop+contactme@gmail.com?subject=WebsiteContact?body=Hello"><img height="64px" width="64px" src="img/icons/email.png"></a>
+                     <a href="https://www.instagram.com/sterling_fire/"><img height="64px" width="85px" src="img/icons/instagram_dark.png"></a>
                      <a href="https://www.linkedin.com/in/sterling-bishop-a6baba50/" ><img height="64px" width="64px" src="img/icons/linkedin_dark.png"></a>
-                     <a href="https://www.instagram.com/sterling_fire/"><img height="64px" width="64px" src="img/icons/instagram_dark.png"></a>
                      <a href="https://www.youtube.com/channel/UCyLCUQfT2YqplBEun-FlONw"><img height="64px" width="64px" src="img/icons/youtube_dark.png"></a>
                   </div>
                   <p class="dark">©Sterling Bishop 2020 - All Rights Reserved</p>
                </footer>
             </body>
-            <script lang="JavaScript">
-               function email(){
-                   var name = document.getElementById('name').value;
-                   var subject = document.getElementById('subject').value;
-                   var emailbody = `Hello my name is ${name}. `+document.getElementById('emailbody').value;
-                   var uri = encodeURI(`mailto:jsterlingbishop+contact@gmail.com?subject=${subject}&body=${emailbody}`);
-
-                   window.open(uri);
-                   }
-            </script>
             <script>
                const h1 = document.querySelector('h1');
                var h = 0;
