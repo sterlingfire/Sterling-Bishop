@@ -50,14 +50,16 @@
                <nav>
                   <ul class="container">
                      <li class="item"><a class="flat-button" href="#"><b>Home</b></a> </li>
-                     <li class="item"><a class="flat-button" href="doc/JSterlingBishopResume.pdf" download="JSterlingBishopResume">Resume</a></li>
-                     <li class="item"><a class="flat-button" href="mailto:jsterlingbishop+contactme@gmail.com">Contact</a> </li>
+                     <li class="item"><a class="flat-button" href="#resume">Resume</a></li>
+                     <li class="item"><a class="flat-button" href="#contact">Contact</a> </li>
                      <!--<li class="item"><a href="#">Projects</a></li>-->
                   </ul>
                </nav>
             </header>
                <aside class="container">
-                  <img width="30%" height="30%" src="img/profilebw.jpg" alt="Portrait of me, Sterling."/>
+                <div class="portraitBox">
+                   <img class="portrait" src="img/profilebw.jpg" alt="Portrait of me, Sterling."/>
+                </div>
                   <div class="stack">
                      <p class="stack">Hello. My name is Jonathan Sterling Bishop, call me Sterling.</p>
                      <p class="stack">Bay Area Developer, Fire Performer, artist.</p>
@@ -82,8 +84,9 @@
                </main>
                <footer class="container">
                    <p>Currently looking for Bay Area developer?
-                   </p>
-                  <h3>
+                    <a id="resume" name="resume" class="flat-button" href="doc/JSterlingBishopResume.pdf" download>Download Resume</a>
+                </p>
+                  <h3 id="contact" name="contact">
                      <p><b>Contact Me:</b>
                      <hr>
                   </h3>

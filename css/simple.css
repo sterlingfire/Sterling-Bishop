@@ -5,13 +5,13 @@ body {
   font-size: 18px;
   margin: 0%;
   overflow-wrap: normal;
+  min-width: 411px;
 }
 
 a {
   color: #08a8fd;
 }
 div {
-  min-width: 411px;
   justify-content: center;
   align-content: center;
 }
@@ -55,7 +55,6 @@ main {
   justify-content: space-between;
   padding: 1%;
   border-radius: 2%;
-  flex-basis: 550px;
   list-style: none;
   text-align: center;
   margin: 0;
@@ -100,10 +99,12 @@ nav .item {
   width: 100%;
 
 }
-
-nav > .item > .item + .item {
-    margin-left: 2%;
-  }
+main, aside{
+  padding: 5%;
+}
+nav>ul {
+  border-radius: 4%;
+}
 header, footer {
     background-color: rgb(42, 65, 80);
     flex-grow: 1;
@@ -128,6 +129,19 @@ input, textarea{
 }
 .smol{
   font-size: 14px;
+}
+.portrait{
+  max-width:100%;
+  max-height:100%;
+  min-width: 30%;
+  min-height: 30%;
+}
+.portraitBox{
+  padding-top: 50px;
+  max-width: 30%;
+  max-height: 30%;
+  min-width: 20%;
+  min-height: 20%;
 }
 .wideLogo{
   width: 200px;
