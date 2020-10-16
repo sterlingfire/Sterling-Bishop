@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   margin: 0%;
+  overflow-wrap:  anywhere;
 }
 div {
   min-width: 411px;
@@ -16,6 +17,9 @@ p, li {
 form {
   max-width: 500px;
   max-height: 300px;
+}
+main.container{
+  flex-direction: ;
 }
 nav a:link{
   display: inline-block;
@@ -32,7 +36,7 @@ main {
   justify-content: center;
 }
 
-.container, .subcontainer {
+.container {
   display: flex;
   padding: 0%; /* Same as width, sets height */
   flex-wrap: nowrap;
@@ -63,11 +67,9 @@ nav.ul{
     background-color: rgb(42, 65, 80);
     text-align: center;
 }
-.stat{
-    padding:10%;
-    min-height: 20px;
-    margin: 10px;
-    text-align: center;
+.logo{
+  height: 100px;
+  width: 100px;
 }
 .item, .stack {
   flex: 1;
@@ -82,6 +84,7 @@ nav.ul{
   padding: 2%;
   flex-direction: column;
   width: 100%;
+
 }
 
 nav > .item > .item + .item {
@@ -107,6 +110,9 @@ input, textarea{
 }
 .dark {
   color: #8d8d8d;
+}
+.wideLogo{
+  width: 200px;
 }
 .flat-button {
   width: auto;
