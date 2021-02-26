@@ -1,5 +1,7 @@
 Sterling Bishop
 
+This site represents my skills **before attending Rithm School** My new site is currently in development.
+
 Rithm School pre-work assignment:
 
 [Description]
